@@ -67,4 +67,4 @@ time.sleep(0.5)
 driver.execute_script("arguments[0].click();", state)
 time.sleep(20)
 
-print("Good")
+print("Good!")
