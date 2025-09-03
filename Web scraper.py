@@ -6,7 +6,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 
-PATH = r"C:\Program Files (x86)\chromedriver.exe"
+PATH = r"C:\Users\elilt\OneDrive\Desktop\Projects\Laptop-Web-Scraper\chromedriver-win64\chromedriver.exe"
 service = Service(PATH)
 driver = webdriver.Chrome(service=service)
 driver.get("https://www.bestbuy.ca/en-ca")
