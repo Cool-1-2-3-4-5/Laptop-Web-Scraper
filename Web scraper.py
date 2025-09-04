@@ -24,9 +24,7 @@ creds = Credentials.from_service_account_file(
 )
 gc = gspread.authorize(creds)
 
-# Open the Google Sheet
-spreadsheet = gc.open("Web Scraper")
-worksheet = spreadsheet.sheet1
+
 
 PATH = r"C:\Users\elilt\OneDrive\Desktop\Projects\Laptop-Web-Scraper\chromedriver-win64\chromedriver.exe"
 service = Service(PATH)
@@ -126,3 +124,8 @@ print(LaptopNames)
 # style-module_productSaving__g7g1G style-module_right__Dvbyx
 # style-module_screenReaderOnly__4QmbS style-module_large__g5jIz
 # style-module_screenReaderOnly__4QmbS style-module_large__g5jIz
+
+spreadsheet = gc.open("Web Scraper").sheet1
+spreadsheet.update_cell(1,1, "Laptop Names")
+for i in range(len(LaptopNames)):
+    spreadsheet.update_cell(i+2, 1, LaptopNames[i])
