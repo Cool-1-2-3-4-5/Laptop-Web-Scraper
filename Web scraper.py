@@ -29,7 +29,7 @@ gc = gspread.authorize(creds)
 PATH = r"C:\Users\elilt\OneDrive\Desktop\Projects\Laptop-Web-Scraper\chromedriver-win64\chromedriver.exe"
 service = Service(PATH)
 driver = webdriver.Chrome(service=service)
-driver.get("https://www.bestbuy.ca/en-ca/search?path=category%253AComputers%2B%2526%2BTablets%253Bcategory%253ALaptops%2B%2526%2BMacBooks%253Bcustom0productcondition%253ABrand%2BNew%253Bcustom0ramsize%253A16%253Bcustom0harddrivecapacity%253A256%2BGB%2B-%2B511.9%2BGB%253Bcomputersoperatingsystem0enrchstring%253AWindows%2B11%2BHome%257CWindows%2B11%2BPro%253Blaptopbatterylife0enrchrange%253A9%2Bto%2B12%2BHours&search=Laptops")
+driver.get("https://www.bestbuy.ca/en-ca")
 
 # Filtering
 
