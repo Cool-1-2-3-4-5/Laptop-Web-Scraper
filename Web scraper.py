@@ -97,7 +97,7 @@ Savings = []
 TruePrices = []
 Reviews = []
 
-# print(SavingRaw[0].text)
+# print(SavingRaw[0].text)awgegea
 # x = int(SavingRaw[0].text.replace("SAVE $",""))
 # print(x)
 for num in range(0,len(LaptopNamesRaw)):
